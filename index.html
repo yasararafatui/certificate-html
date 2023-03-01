@@ -1,253 +1,348 @@
 <!DOCTYPE html>
 <html>
-    <head>
-      <meta charset="utf-8" />
-      <title> Certificate </title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-      <style>
-                  /* http://meyerweb.com/eric/tools/css/reset/ 
+  <head>
+    <meta charset="utf-8" />
+    <title>Certificate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* http://meyerweb.com/eric/tools/css/reset/ 
             v2.0 | 20110126
             License: none (public domain)
          */
 
-         html, body, div, span, applet, object, iframe,
-         h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-         a, abbr, acronym, address, big, cite, code,
-         del, dfn, em, img, ins, kbd, q, s, samp,
-         small, strike, strong, sub, sup, tt, var,
-         b, u, i, center,
-         dl, dt, dd, ol, ul, li,
-         fieldset, form, label, legend,
-         table, caption, tbody, tfoot, thead, tr, th, td,
-         article, aside, canvas, details, embed, 
-         figure, figcaption, footer, header, hgroup, 
-         menu, nav, output, ruby, section, summary,
-         time, mark, audio, video {
-            margin: 0;
-            padding: 0;
-            border: 0;
-            font-size: 100%;
-            font: inherit;
-            vertical-align: baseline;
-         }
-         /* HTML5 display-role reset for older browsers */
-         article, aside, details, figcaption, figure, 
-         footer, header, hgroup, menu, nav, section {
-            display: block;
-         }
-         body {
-            line-height: 1;
-         }
-         ol, ul {
-            list-style: none;
-         }
-         blockquote, q {
-            quotes: none;
-         }
-         blockquote:before, blockquote:after,
-         q:before, q:after {
-            content: '';
-            content: none;
-         }
-         table {
-            border-collapse: collapse;
-            border-spacing: 0;
-         }
+      html,
+      body,
+      div,
+      span,
+      applet,
+      object,
+      iframe,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      blockquote,
+      pre,
+      a,
+      abbr,
+      acronym,
+      address,
+      big,
+      cite,
+      code,
+      del,
+      dfn,
+      em,
+      img,
+      ins,
+      kbd,
+      q,
+      s,
+      samp,
+      small,
+      strike,
+      strong,
+      sub,
+      sup,
+      tt,
+      var,
+      b,
+      u,
+      i,
+      center,
+      dl,
+      dt,
+      dd,
+      ol,
+      ul,
+      li,
+      fieldset,
+      form,
+      label,
+      legend,
+      table,
+      caption,
+      tbody,
+      tfoot,
+      thead,
+      tr,
+      th,
+      td,
+      article,
+      aside,
+      canvas,
+      details,
+      embed,
+      figure,
+      figcaption,
+      footer,
+      header,
+      hgroup,
+      menu,
+      nav,
+      output,
+      ruby,
+      section,
+      summary,
+      time,
+      mark,
+      audio,
+      video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+      }
+      /* HTML5 display-role reset for older browsers */
+      article,
+      aside,
+      details,
+      figcaption,
+      figure,
+      footer,
+      header,
+      hgroup,
+      menu,
+      nav,
+      section {
+        display: block;
+      }
+      body {
+        line-height: 1;
+      }
+      ol,
+      ul {
+        list-style: none;
+      }
+      blockquote,
+      q {
+        quotes: none;
+      }
+      blockquote:before,
+      blockquote:after,
+      q:before,
+      q:after {
+        content: "";
+        content: none;
+      }
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
 
-         .container{
-            width: 1174px;
-            height: 783px;
-            background-color: #fdfae5;
-            position: relative;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0 auto;
-         }
+      .container {
+        width: 800px;
+        height: 540px;
+        background-color: #fdfae5;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+      }
 
-         .container-inner{
-            width: 96%;
-            height: 96%;
-            z-index: 2;
-            border:2px solid #fed330;
-            text-align: center;
-            box-sizing: border-box;
-            padding-top: 100px;
-            position: relative;
-         }
-         .container .top-left{
-            position: absolute;
-            top:0;
-            left:0
-         }
-         .container .top-left .arrow{
-            position: absolute;
-            top:0;
-            left:0
-         }
-         .container .top-left .black-border{
-            transform: scale(1.1);
-         }
-         .container .bottom-right{
-            position: absolute;
-            bottom: -3px;
-            right: 0;
-         }
-         .container .bottom-right .arrow{
-            position: absolute;
-            right: 0;
-            bottom: 0;
-         }
-         .container .badge{
-            position: absolute;
-            top:0;
-            left:3%;
-            z-index: 3;
-            height: 350px;
-         }
-         .container .badge img{
-            max-height: 100%;
-         }
-         .certificate-header h1 {
-            font-size: 64px;
-            margin-bottom: 10px;
-            color:#6d6e69;
-         }
-         .certificate-header h3{
-            font-size:32px;
-            font-weight: lighter;
-            color:#6d6e69;
-         }
-         .certificate-body {
-            font-family: sans-serif;
-            font-weight: 600;
-            color: #3d3d3d;
-            margin-top: 60px;
-         }
-         .certificate-body .username{
-            color:#2487c1;
-            font-size: 34px;
-            margin-bottom: 50px;
-         }
-         .certificate-body .coursename{
-            font-size: 30px;
-            margin-top: 30px;
-            margin-bottom: 20px;
-            font-weight: bolder;
-            color:#000;
-         }
-         .certificate-body p{
-            font-size: 22px;
-            color:#6d6e69;
-         }
-         .certificate-body p:first-child{
-            margin-bottom: 30px;
-         }
-         .certificate-body .certificate-input{
-            width: 400px;
-         }
-         .certificate-footer{
-            display: flex;
-            position: absolute;
-            bottom: 20px;
-            left: 20px;
-            width: 70%;
-         }
-         .certificate-footer > div {
-            width: 30%;
-            margin-right: 30px;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-         }
-         .certificate-footer .value {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 5px;
-            font-family: 'Open Sans', sans-serif;
-         }
-         .certificate-input-underline{
-            height: 2px;
-            background-color: #3d3d3d;
-            width: 200px;
-            margin: 0 auto;
-         }
-         .input-label{
-            display: block;
-            margin-top: 10px;
-            color:#6d6e69;
-            width: 200px;
-            font-size: 24px;
-         }
-         .hidden-element{
-            width: 200px;
-            height: 28px;
-         }
-         #pan-learn-logo{
-            position: absolute;
-            top:0;
-            right:0;
-         }
-         .sign {
-            position: relative;
-         }
-         .sign .signature{
-            position: absolute;
-            top:-36px;
-         }
-      </style>
-    </head>
-    <body>
-       <div class="container">
-           <div class="top-left">
-              <img class="arrow" src="assets/topLeft.png" alt="topLeft" />
-              <img class="black-border" src="assets/black.png" alt="black" />
-           </div>
-           <div class="badge">
-            <img src="assets/badge.png" />
-           </div>
-           <div class="bottom-right">
-             <img class="arrow" src="assets/grey.png" alt="grey-border" />
-             <img src="assets/bottomRight.png" alt="bottom-right" />
-           </div>
-           <div class="container-inner">
-              <div id="pan-learn-logo" >
-                 <img src="assets/pan.png" alt="pan-learn-logo" />
-              </div>
-              <div class="certificate-header">
-                <h1> CERTIFICATE </h1>
-                <h3> OF COMPLETION </h3>
-              </div>
-              <div class="certificate-body">
-                 <p> PROUDLY PRESENTS TO </p>
-                 <h2 class="username" > Jananan Periyannan </h2>
-                 <p> COMPLETING COURSE ON </p>
-                 <h1 class="coursename" > Assertive Communication - Key to Effective Conversations </h1>
-                 <div class="certificate-input-underline"></div>
-              </div>
-              <div class="certificate-footer">
-                 <div class="id">
-                    <p class="value"> PAN161 </p>
-                    <div class="certificate-input-underline"></div>
-                    <label class="input-label" > Certificate ID </label>
-                 </div>     
-                 <div class="date">
-                    <p class="value" > 22/07/2022 </p>
-                    <div class="certificate-input-underline"></div>
-                    <label class="input-label" > Date </label>
-                 </div>
-                 <div class="sign">
-                    <img class="signature" src="assets/signature.png" />
-                    <div class="hidden-element" ></div>
-                    <div class="certificate-input-underline"></div>
-                    <label class="input-label" > Director L & D <br/> Pan Learn </label>
-                 </div>
-              </div>
-           </div>
-       </div>
-    </body>
+      .container-inner {
+        width: 94%;
+        height: 94%;
+        z-index: 2;
+        border: 2px solid #fed330;
+        text-align: center;
+        box-sizing: border-box;
+        padding-top: 70px;
+        position: relative;
+      }
+      .container .top-left {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .container .top-left .arrow {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-left: -72px;
+      }
+      .container .top-left .black-border {
+        width: 250px;
+      }
+      .container .bottom-right {
+        position: absolute;
+        bottom: -134px;
+        right: 0;
+      }
+      .container .bottom-right .arrow {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      }
+      .container .badge {
+        position: absolute;
+        top: 0;
+        left: 6%;
+        z-index: 3;
+        height: 270px;
+      }
+      .container .badge img {
+        max-height: 100%;
+      }
+      .certificate-header h1 {
+        font-size: 48px;
+        margin-bottom: 10px;
+        color: #6d6e69;
+      }
+      .certificate-header h3 {
+        font-size: 27px;
+        font-weight: lighter;
+        color: #6d6e69;
+      }
+      .certificate-body {
+        font-family: sans-serif;
+        font-weight: 600;
+        color: #3d3d3d;
+        margin-top: 40px;
+      }
+      .certificate-body .username {
+        color: #2487c1;
+        font-size: 24px;
+        margin-bottom: 30px;
+      }
+      .certificate-body .coursename {
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-weight: bolder;
+        color: #000;
+      }
+      .certificate-body p {
+        font-size: 18px;
+        color: #6d6e69;
+      }
+      .certificate-body p:first-child {
+        margin-bottom: 30px;
+      }
+      .certificate-body .certificate-input {
+        width: 400px;
+      }
+      .certificate-footer {
+        display: flex;
+        position: absolute;
+        bottom: 20px;
+        left: 40px;
+        width: 60%;
+      }
+      .certificate-footer > div {
+        width: 33%;
+        margin-right: 30px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+      .certificate-footer .value {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        font-family: "Open Sans", sans-serif;
+      }
+      .certificate-input-underline {
+        height: 2px;
+        background-color: #3d3d3d;
+        width: 140px;
+        margin: 0 auto;
+      }
+      .input-label {
+        display: block;
+        margin-top: 10px;
+        color: #6d6e69;
+        width: 200px;
+        font-size: 20px;
+      }
+      .hidden-element {
+        width: 200px;
+        height: 22px;
+      }
+      #pan-learn-logo {
+        position: absolute;
+        top: 20px;
+        right: 0;
+        width: 150px;
+      }
+      #pan-learn-logo img {
+        max-width: 100%;
+      }
+      .sign {
+        position: relative;
+      }
+      .sign .signature {
+        position: absolute;
+        top: -12px;
+        width: 120px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top-left">
+        <img class="arrow" src="assets/topLeft.png" alt="topLeft" />
+        <img class="black-border" src="assets/black.png" alt="black" />
+      </div>
+      <div class="badge">
+        <img src="assets/badge.png" />
+      </div>
+      <div class="bottom-right">
+        <img class="arrow" src="assets/grey.png" alt="grey-border" />
+        <img src="assets/bottomRight.png" alt="bottom-right" />
+      </div>
+      <div class="container-inner">
+        <div id="pan-learn-logo">
+          <img src="assets/pan.png" alt="pan-learn-logo" />
+        </div>
+        <div class="certificate-header">
+          <h1>CERTIFICATE</h1>
+          <h3>OF COMPLETION</h3>
+        </div>
+        <div class="certificate-body">
+          <p>PROUDLY PRESENTS TO</p>
+          <h2 class="username">Jananan Periyannan</h2>
+          <p>COMPLETING COURSE ON</p>
+          <h1 class="coursename">
+            Assertive Communication - Key to Effective Conversations
+          </h1>
+          <div class="certificate-input-underline"></div>
+        </div>
+        <div class="certificate-footer">
+          <div class="id">
+            <p class="value">PAN161</p>
+            <div class="certificate-input-underline"></div>
+            <label class="input-label"> Certificate ID </label>
+          </div>
+          <div class="date">
+            <p class="value">22/07/2022</p>
+            <div class="certificate-input-underline"></div>
+            <label class="input-label"> Date </label>
+          </div>
+          <div class="sign">
+            <img class="signature" src="assets/signature.png" />
+            <div class="hidden-element"></div>
+            <div class="certificate-input-underline"></div>
+            <label class="input-label">
+              Director L & D <br />
+              Pan Learn
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
